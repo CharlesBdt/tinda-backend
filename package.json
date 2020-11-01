@@ -1,0 +1,15 @@
+{
+  "name": "tinda-backend",
+  "version": "1.0.0",
+  "description": "Backend Tinder clone w/ M.E.R.N Stack",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11"
+  }
+}
