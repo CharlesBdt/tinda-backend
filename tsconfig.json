@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+     "module": "ES2015",
+     "moduleResolution": "node",
+     "pretty": true,
+     "target": "ES2015",
+     "outDir": "./dist",
+     "baseUrl": "./lib",
+     "allowSyntheticDefaultImports": true
+  },
+  "include": [
+     "lib/**/*.ts"
+  ],
+  "exclude": [
+     "node_modules"
+  ]
+}
