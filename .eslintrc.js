@@ -13,6 +13,9 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   rules: {
     'import/extensions': 'off',
+    'class-methods-use-this': 'off',
+    'import/no-unresolved': 'off',
+    'lines-between-class-members': 'off'
   },
   settings: {
     'import/resolver': {

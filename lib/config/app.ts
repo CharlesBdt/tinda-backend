@@ -1,12 +1,18 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import CommonRoutes from '../routes/common.js';
+import CardRoutes from '../routes/card.js';
 
 class App {
   public app: express.Application;
+  private cardRoutes: CardRoutes = new CardRoutes();
+  private commonRoutes: CommonRoutes = new CommonRoutes();
 
   constructor() {
     this.app = express();
     this.config();
+    this.cardRoutes.route(this.app);
+    this.commonRoutes.route(this.app);
   }
 
   private config(): void {
